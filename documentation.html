@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+  <title>Xfce Foundation Classes</title>
+  <meta content="The XFC Development Team" name="author">
+  <meta content="Website: Documentation Page" name="description">
+  <link type="text/css" href="images/website.css" rel="stylesheet">
+  <link href="http://www.xfce.org/favicon.ico" rel="shortcut icon">
+</head>
+<body style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"
+ alink="#000099" link="#000099" vlink="#990099">
+<!--Main table: holds the entire contents of the web page.-->
+<table style="text-align: left; width: 100%;" border="0" cellpadding="0"
+ cellspacing="0">
+  <tbody>
+    <tr>
+      <td
+ style="vertical-align: middle; white-space: nowrap; text-align: right; height: 25px;"
+ class="darkbluestripe"><a href="http://xfce.org" class="foot">Xfce.org</a>
+| <a href="http://xfce-goodies.berlios.de/" class="foot">Xfce
+Goodies</a> | Xfce Foundation
+Classes | <a href="http://bugzilla.xfce.org/" class="foot">Xfce
+Bug
+Tracker</a>
+| <a href="http://www.xfcewiki.org/" class="foot">Xfce Wiki</a>
+| <a href="http://forum.xfce.org/" class="foot">Xfce Forum</a>
+| <a href="http://blog.xfce.org/" class="foot">Xfce DevBlog</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<!--Top dark-blue stripe: contains links to other Xfce sites.--></td>
+    </tr>
+    <tr>
+      <td
+ style="vertical-align: top; white-space: nowrap; text-align: left; height: 140px; font-size: 12px;"><!--Logo area: white background.-->
+      <table style="text-align: left; width: 100%; height: 100%;"
+ border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td
+ style="vertical-align: middle; white-space: nowrap; text-align: left;"><img
+ style="width: 300px; height: 110px;" alt="" src="images/xfc.png"
+ align="middle"></td>
+            <td
+ style="vertical-align: middle; white-space: nowrap; text-align: left; color: rgb(17, 55, 95);">
+            <h2>... the power of
+gtk, the power of c++!</h2>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+    <tr>
+      <td
+ style="vertical-align: middle; white-space: nowrap; text-align: center; height: 25px;"
+ class="greybluestripe"><!--Top grey-blue stripe: contains links to other website pages.-->
+      <a href="index.html" class="qn">Home</a>
+| <a class="qn" href="news.html">News</a>
+| <a class="qn" href="history.html">History</a>
+| <a class="qn" href="faq.html">FAQ</a>
+| <a class="hl" href="documentation.html">Documentation</a>
+| <a class="qn" href="download.html">Download</a>
+| <a class="qn" href="contact.html">Contact</a>
+| <a class="qn" href="links.html">Links</a><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; text-align: left;">
+      <table style="text-align: left; width: 100%;" border="0"
+ cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td class="leftmenu"
+ style="vertical-align: top; white-space: nowrap; text-align: left; width: 20%;">
+            <ul class="menu">
+              <li><a class="mbold" href="index.html">Home</a></li>
+              <li> <a href="news.html" class="mbold">News</a></li>
+              <li> <a class="mbold" href="history.html">History</a></li>
+              <li> <a class="mbold" href="faq.html">FAQ</a></li>
+              <li> <a class="mhl" href="documentation.html">Documentation</a><span
+ class="mhl"><br>
+                </span>
+                <ul class="submenu">
+                  <li><a class="mlight" href="docs/index.html">Online
+Manual</a><span class="mhl"></span></li>
+                  <li><a class="mlight" href="documentation.html#D02">Minimum
+requirements</a><span class="mhl"></span></li>
+                  <li><span class="mhl"><a class="mlight"
+ href="documentation.html#D03">Installing
+from source</a></span></li>
+                  <li><span class="mhl"><a href="documentation.html#D04"
+ class="mlight">Compiling applications</a><br>
+                    </span></li>
+                </ul>
+              </li>
+              <li><a class="mbold" href="download.html">Download</a></li>
+              <li> <a class="mbold" href="contact.html">Contact</a></li>
+              <li> <a class="mbold" href="links.html">Links</a></li>
+            </ul>
+            </td>
+            <td
+ style="vertical-align: top; white-space: nowrap; text-align: left; width: 1px;"
+ class="greybluestripe"><!--Left menu grey-blue border--><br>
+            </td>
+            <td style="vertical-align: top; text-align: left;"
+ class="pagecontents">
+            <h3><a name="D01">Online Documentation</a></h3>
+            <a name="D01">The Xfce Foundation Classes comes with
+excellent documentation, all of
+which can be viewed online </a><a href="docs/index.html" class="phl">here</a>:&nbsp;<br>
+            <ul>
+              <li>There is a large
+collection of widget <a href="docs/howto/html/index.html" class="phl">HOWTOs</a>
+that cover
+everything from
+general information and library structure to individual widget
+programming. Each widget HOWTO first discusses any widget basics and
+then works through a widget example. The HOWTOs are linked to the API
+reference manual so widget examples can be easily accessed from there.</li>
+              <li>There is a
+complete <a class="phl" href="docs/reference/html/index.html">API
+reference manual</a>. This manual is
+compiled by Doxygen from special
+comments in the XFC header files. Every typedef, enum and class has
+been documented, including all public and protected member functions
+and signals. </li>
+              <li>There is a good <a
+ href="docs/tutorial/html/index.html" class="phl">tutorial</a>
+that
+targets both
+new and
+experienced GTK+ programmers. The tutorial takes you through the
+process building a real application, called 'XfcApp', which you can
+then use as the starting point for your own projects. The tutorial
+covers two important topics essential for new programmers: building a
+GNU autotools project and adding international language support.</li>
+            </ul>
+            <br>
+            <h3><a name="D02">Minimum Requirements</a></h3>
+            <a name="D02">The libXFCcore library depends on the
+following:<br>
+            </a>
+            <ul>
+              <a name="D02"> </a>
+              <li><a class="phl" href="http://www.gtk.org">GLib </a>2.6.0
+or higher</li>
+              <li><a class="phl" href="http://libsigc.sf.net">Libsigc++</a>
+2.0.6 or higher</li>
+              <li><a class="phl"
+ href="http://www.freedesktop.org/software/pkgconfig/">PkgConfig</a>
+0.14 or higher</li>
+            </ul>
+            <br>
+The libXFCui library depends on libXFCcore and the following:<br>
+            <ul>
+              <li><a class="phl"
+ href="http://developer.gnome.org/projects/gap/">ATK</a>
+1.9.0 or higher</li>
+              <li><a class="phl" href="http://www.gtk.org">GTK+</a>
+2.6.0 or higher</li>
+              <li><a class="phl" href="http://www.pango.org/">Pango</a>
+1.8.0 or higher</li>
+            </ul>
+            <br>
+Most Linux distributions include these packages. Just make sure that
+the development packages are also installed on your system. Once XFC is
+installed you will find a complete reference manual and a tutorial in
+the &lt;docs&gt; directory. If the API reference manual is
+missing for some reason, don't worry. It's very likely your Linux
+distribution comes with a program called Doxygen, which should be in
+your &lt;usr/bin&gt; directory. When you run make for the first
+time, XFC will use Doxygen to compile the API reference manual from
+special comments in the header files.<br>
+            <br>
+            <h3><a name="D03">Installing from source code</a></h3>
+            <a name="D03">The first thing to do of course is download
+to the latest version of
+the </a><a class="phl" href="download.html">source code</a>.&nbsp;
+The
+Xfce Foundation Classes uses GNU Autoconf for configuration, so once
+untar'd run configure with the --help argument to see a list of
+options. You should use the <a class="phl" href="http://gcc.gnu.org/">GNU
+compiler</a> version 3.2.0 (or higher) to compile XFC.<br>
+            <br>
+You can compile and install XFC with
+the following commands run in the
+top-level
+source directory:<br>
+            <br>
+            <div class="fbox"><code>$
+./configure
+--prefix=directory<br>
+$ make<br>
+$ make install</code></div>
+            <br>
+The '--prefix' argument takes the
+directory
+where you want XFC installed. If the directory is omitted XFC
+will install itself into the &lt;usr/local&gt;
+directory. By default, configure builds libXFCcore and libXFCui with
+debugging and compiler symbols so you can debug your applications
+during development. If you want libXFCcore and libXFCui built without
+debugging symbols, run configure with the following option:<br>
+            <br>
+            <div class="fbox"><code>./configure
+--disable-debug</code></div>
+            <br>
+Alternativley, you can install the libXFCcore and libXFCui libraries
+with
+all debugging symbols stripped out by calling:<br>
+            <br>
+            <div class="fbox"><code>make
+install-strip</code></div>
+            <br>
+The stripped libraries are much
+smaller, and faster: libXFCcore is just 220 kbytes and libXFCui is 2.3
+megabytes.<br>
+            <br>
+If you don't want to build the API reference, or if you don't have
+Doxygen installed, run configure with the following option:<br>
+            <br>
+            <div class="fbox"><code>./configure
+--disable-docs</code></div>
+            <br>
+Other configure options include: --disable-demos, --disable-examples
+and --disable-tests, which disable the implied feature so it wont
+get
+compiled.<br>
+            <br>
+            <h3><a name="D04">Compiling a XFC Application</a></h3>
+            <a name="D04">To compile an XFC application you need to use
+            </a><a href="http://www.freedesktop.org/software/pkgconfig/"
+ class="phl">pkg-config</a>
+which can be obtained from freedesktop.org. pkg-config is a tool for
+managing library compile and link flags during make file exceution. It
+reads the xfcui-X.X.pc file (X.X is the version number) which comes
+with XFC to determine what compiler switches are needed to compile a
+XFC program. The --cflags option will output a list of include
+directories for the compiler to look in, and the --libs option will
+output the list of libraries for the compiler to link with and the
+directories to find them in. For example, a typical compile command
+would look like this:<br>
+            <br>
+            <div class="fbox"><code>g++ -Wall -g -O2 helloworld.cc -o
+helloworld `pkg-config xfcui-X.X --cflags --libs`</code></div>
+            <br>
+Replace X.X with the major and minor version numbers of the libXFCui
+library installed on your system.&nbsp; Note that the type of single
+quote used in the compile command above is significant. <br>
+            <br>
+            <br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+    <tr>
+      <td class="greybluestripe"
+ style="vertical-align: top; white-space: nowrap; text-align: left; height: 25px;"><!--Bottem grey-blue stripe--><br>
+      </td>
+    </tr>
+    <tr>
+      <td
+ style="vertical-align: middle; white-space: nowrap; text-align: center; height: 54px;"><!--Centered logos at bottom on a white background.--><a
+ href="http://validator.w3.org/check/referer"><img
+ src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0"
+ style="border: 0px solid ; width: 88px; height: 31px;" align="middle"></a>&nbsp;&nbsp;
+      <a href="http://www.lunar-linux.org"><img
+ style="border: 0px solid ; width: 120px; height: 32px;" alt=""
+ src="images/poweredbylunar.png" align="middle"></a></td>
+    </tr>
+    <tr>
+      <td
+ style="vertical-align: top; white-space: nowrap; text-align: left; height: 25px;"><!--Bottom dark-blue stripe: for copyright information.-->
+      <table style="text-align: left; width: 100%;" border="0"
+ cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td class="darkbluestripe"
+ style="vertical-align: middle; white-space: nowrap; text-align: left; width: 50%; height: 25px;"><em>&nbsp;&nbsp;&nbsp;
+Copyright
+© 2004-2005 The XFC Development Team</em></td>
+            <td class="darkbluestripe"
+ style="vertical-align: middle; white-space: nowrap; text-align: right; width: 50%;">Xfce
+is © <a class="foot" href="mailto:fourdan@xfce.org">Olivier
+FOURDAN</a>
+1996-2005&nbsp;&nbsp;&nbsp; <br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

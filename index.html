@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Xfce Foundation Classes</title>
+  <meta name="author" content="The XFC Development Team">
+  <meta name="description" content="Website: Home Page">
+  <link rel="stylesheet" href="images/website.css" type="text/css">
+  <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"
+ alink="#000099" link="#000099" vlink="#990099">
+<!--Main table: holds the entire contents of the web page.-->
+<table style="text-align: left; width: 100%;" border="0" cellpadding="0"
+ cellspacing="0">
+  <tbody>
+    <tr>
+      <td
+ style="vertical-align: middle; white-space: nowrap; text-align: right; height: 25px;"
+ class="darkbluestripe"><a class="foot" href="http://xfce.org">Xfce.org</a>
+| <a class="foot" href="http://xfce-goodies.berlios.de/">Xfce
+Goodies</a> | Xfce Foundation
+Classes | <a class="foot" href="http://bugzilla.xfce.org/">Xfce
+Bug
+Tracker</a>
+| <a class="foot" href="http://www.xfcewiki.org/">Xfce Wiki</a>
+| <a class="foot" href="http://forum.xfce.org/">Xfce Forum</a>
+| <a class="foot" href="http://blog.xfce.org/">Xfce DevBlog</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<!--Top dark-blue stripe: contains links to other Xfce sites.--></td>
+    </tr>
+    <tr>
+      <td
+ style="vertical-align: middle; white-space: nowrap; text-align: left; font-size: 12px;"><!--Logo area: white background.-->
+      <table style="text-align: left; width: 100%; height: 140px;"
+ border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td
+ style="vertical-align: middle; white-space: nowrap; text-align: left;"><img
+ src="images/xfc.png" alt="" style="width: 300px; height: 110px;"
+ align="middle"></td>
+            <td
+ style="vertical-align: middle; white-space: nowrap; text-align: left; color: rgb(17, 55, 95);">
+            <h2>... the power of
+gtk, the power of c++!</h2>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+    <tr>
+      <td
+ style="vertical-align: middle; white-space: nowrap; text-align: center; height: 25px;"
+ class="greybluestripe"><!--Top grey-blue stripe: contains links to other website pages.-->
+      <a href="index.html" class="hl">Home</a>
+| <a href="news.html" class="qn">News</a>
+| <a href="history.html" class="qn">History</a>
+| <a href="faq.html" class="qn">FAQ</a>
+| <a href="documentation.html" class="qn">Documentation</a>
+| <a href="download.html" class="qn">Download</a>
+| <a href="contact.html" class="qn">Contact</a>
+| <a href="links.html" class="qn">Links</a><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; text-align: left;">
+      <table style="text-align: left; width: 100%;" border="0"
+ cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td
+ style="vertical-align: top; white-space: nowrap; text-align: left; width: 20%;"
+ class="leftmenu">
+            <ul class="menu">
+              <li><a href="index.html" class="mhl">Home</a></li>
+              <li><a class="mbold" href="news.html">News</a></li>
+              <li><a href="history.html" class="mbold">History</a></li>
+              <li><a href="faq.html" class="mbold">FAQ</a></li>
+              <li><a href="documentation.html" class="mbold">Documentation</a></li>
+              <li><a href="download.html" class="mbold">Download</a></li>
+              <li><a href="contact.html" class="mbold">Contact</a></li>
+              <li><a href="links.html" class="mbold">Links</a></li>
+            </ul>
+            </td>
+            <td class="greybluestripe"
+ style="vertical-align: top; white-space: nowrap; text-align: left; width: 1px;"><!--Left menu grey-blue border--><br>
+            </td>
+            <td class="pagecontents"
+ style="vertical-align: top; text-align: left;">
+            <h2><!--Here starts the main content of the page.-->Welcome
+to the
+Xfce Foundation Classes</h2>
+The Xfce Foundation Classes is a set of integrated C++ classes for
+developing Xfce applications on UNIX-like operating systems such as
+Linux. The classes combine the power of GTK+ and the power of C++ into
+a state-of-the-art application development framework for the Xfce
+Desktop
+Environment. The classes
+judiciously use C++ language features to avoid
+layering on too much extra C++ complexity. The API is easy to
+understand and use, and should feel immediately familiar to most GTK+
+programmers. The Xfce Foundation Classes is part of the Xfce project,
+and like Xfce it's lightweight, fast and easy to use. Currently there
+are three modules, the
+core object system and utility library (libXFCcore), the user
+interface
+library (libXFCui) and the Glade XML parser library (libXFCglade).<br>
+            <br>
+            <h4>The libXFCcore
+library<br>
+            </h4>
+The libXFCcore library wraps the GLib object system and selected
+objects from the GLib utility library. Essentially, it provides a low
+level object system that can be used to build other libraries; libXFCui
+depends on this library. libXFCcore uses the <a
+ href="http://libsigc.sf.net/" class="phl">libsigc++
+2.0</a> callback
+library to implement a typesafe system of signals and slots that makes
+using native GObject signals or creating your own signals very easy.
+libXFCcore includes a standard string compatible UTF-8 string class,
+automatic memory management, several convenient base classes, reference
+documentation
+and several example programs.<br>
+            <br>
+            <h4>The libXFCui
+library</h4>
+The libXFCui library is a user interface toolkit that makes developing <a
+ href="http://www.gtk.org/" class="phl">GTK+</a>
+applications in C++ easy, intuitive and efficient. It provides more
+than 420 classes
+that wrap most&nbsp; of the objects found in the <a
+ href="http://developer.gnome.org/projects/gap/" class="phl">ATK</a>,
+GDK,
+Gdk-pixbuf,
+GTK
+and <a href="http://www.pango.org/" class="phl">Pango</a>
+libraries.
+libXFCui is built on the libXFCcore library so you
+don't need to include this library in your application; libXFCui will
+do that for you. Included is a full set of simple
+example programs, a C++ version of the GTK+ widget demonstration
+program, an extensive reference manual, several test applications and a
+tutorial.<br>
+            <br>
+            <h4>The libXFCglade
+library</h4>
+Glade is a popular GUI builder for GTK+ applications. Using Glade, you
+can visually create an application's user interface and save it to a
+XML description file (.glade). libglade is a C library that loads and
+parses Glade
+XML description files at runtime and generates the
+appropriate widgets.&nbsp;libXFCglade is a C++ binding for libglade. It
+provides the user with a convenient way to use a Glade generated
+interface in a XFC application. And because there is less C++ code to
+write it makes XFC application development easier and faster. <br>
+            <br>
+            <h4>Why program in C++?</h4>
+Over the years application programming has become more complex. Today,
+C++ is a better way the manage that complexity because it provides you
+with a variety of programming designs, both object-oriented and
+conventional, that let you develop high-quality applications easily.
+Properly used, C++ code is easily maintainable, is extensible, and can
+be performance and memory efficient.<br>
+            <br>
+            <h4>Latest release...</h4>
+The latest development release of the Xfce Foundation Classes is
+version 4.3.1.<br>
+            <br>
+            <br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+    <tr>
+      <td
+ style="vertical-align: top; white-space: nowrap; text-align: left; height: 25px;"
+ class="greybluestripe"><!--Bottem grey-blue stripe--><br>
+      </td>
+    </tr>
+    <tr>
+      <td
+ style="vertical-align: middle; white-space: nowrap; text-align: center; height: 54px;"><!--Centered logos at bottom on a white background.--><a
+ href="http://validator.w3.org/check/referer"><img
+ style="border: 0px solid ; width: 88px; height: 31px;"
+ alt="Valid XHTML 1.0" src="http://www.w3.org/Icons/valid-xhtml10"
+ align="middle"></a>&nbsp;&nbsp; <a href="http://www.lunar-linux.org"><img
+ src="images/poweredbylunar.png" alt=""
+ style="border: 0px solid ; width: 120px; height: 32px;" align="middle"></a></td>
+    </tr>
+    <tr>
+      <td
+ style="vertical-align: top; white-space: nowrap; text-align: left; height: 25px;"><!--Bottom dark-blue stripe: for copyright information.-->
+      <table style="text-align: left; width: 100%;" border="0"
+ cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td
+ style="vertical-align: middle; white-space: nowrap; text-align: left; width: 50%; height: 25px;"
+ class="darkbluestripe"><em>&nbsp;&nbsp;&nbsp;
+Copyright
+© 2004-2005 The XFC Development Team</em></td>
+            <td
+ style="vertical-align: middle; white-space: nowrap; text-align: right; width: 50%;"
+ class="darkbluestripe">Xfce
+is © <a href="mailto:fourdan@xfce.org" class="foot">Olivier
+FOURDAN</a>
+1996-2005&nbsp;&nbsp;&nbsp; <br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

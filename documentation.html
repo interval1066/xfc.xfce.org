@@ -176,8 +176,8 @@ special comments in the header files.<br>
 to the latest version of
 the </a><a class="phl" href="download.html">source code</a>.&nbsp;
 The
-Xfce Foundation Classes uses GNU Autoconf for configuration, so once
-untar'd run configure with the --help argument to see a list of
+Xfce Foundation Classes uses CMake configuration, so once
+untar'd run run cmake with the --help argument to see a list of
 options. You should use the <a class="phl" href="http://gcc.gnu.org/">GNU
 compiler</a> version 3.2.0 (or higher) to compile XFC.<br>
             <br>
@@ -187,8 +187,7 @@ top-level
 source directory:<br>
             <br>
             <div class="fbox"><code>$
-./configure
---prefix=directory<br>
+cmake .<br>
 $ make<br>
 $ make install</code></div>
             <br>
@@ -198,33 +197,12 @@ where you want XFC installed. If the directory is omitted XFC
 will install itself into the &lt;usr/local&gt;
 directory. By default, configure builds libXFCcore and libXFCui with
 debugging and compiler symbols so you can debug your applications
-during development. If you want libXFCcore and libXFCui built without
-debugging symbols, run configure with the following option:<br>
+during development. If you want libXFCcore and libXFCui built with
+debugging symbols, run cmake with the following option:<br>
             <br>
-            <div class="fbox"><code>./configure
---disable-debug</code></div>
+            <div class="fbox"><code>cmake -DCMAKE_BUILD_TYPE=Debug .</code></div>
             <br>
-Alternativley, you can install the libXFCcore and libXFCui libraries
-with
-all debugging symbols stripped out by calling:<br>
-            <br>
-            <div class="fbox"><code>make
-install-strip</code></div>
-            <br>
-The stripped libraries are much
-smaller, and faster: libXFCcore is just 220 kbytes and libXFCui is 2.3
-megabytes.<br>
-            <br>
-If you don't want to build the API reference, or if you don't have
-Doxygen installed, run configure with the following option:<br>
-            <br>
-            <div class="fbox"><code>./configure
---disable-docs</code></div>
-            <br>
-Other configure options include: --disable-demos, --disable-examples
-and --disable-tests, which disable the implied feature so it wont
-get
-compiled.<br>
+Run cmake with the --help option for more.<br>
             <br>
             <h3><a name="D04">Compiling a XFC Application</a></h3>
             <a name="D04">To compile an XFC application you need to use
